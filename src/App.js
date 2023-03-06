@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import Alert from './components/Alert';
-// import About from './components/About';
+import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 // import {
@@ -59,10 +59,11 @@ function App() {
       {/* <Routes> */}
           {/* /users --> Component1
           /users/home --> Component2  */}
-          {/* <Route exact path="/about" element={<About/>}/>
+          {/* <Route exact path="/about" element={<About mode={mode}/>}/>
           <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode} />}/>
         */} 
      <TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode} />
+     {/* <About mode={mode}/> */}
            {/* </Routes> */}
     </div>
 
